@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin page</title>
+<link rel="stylesheet" href="admin.css">
+<style> body{ 
+background-image: 
+url('https://i.ytimg.com/vi/ttd-hXkpnAA/maxresdefault.jpg'); background-size: 1547px 720px; 
+} .middle{ 
+padding:20px 20px; 
+margin-left:auto; 
+margin-right:auto; 
+height:400px; 
+width:500px; } 
+</style> </head> <script> 
+function myFunction() { 
+alert("Continue to LOGOUT"); 
+} 
+</script>
+<body>
+<div class="topnav">
+<a class="active" href="index.html">Home</a>
+<a href="contact.html">Contact</a>
+<a href="Teacherinfo.html">Notifications</a>
+<a href="studentsearch.html">Student Search</a>
+<a onclick="myFunction()" href="index.html">LogOut</a>
+</div>
+<div class="middle">
+<div class="row">
+<div class="column">
+<div class="card">
+<div class="container">
+<h2 class="heading">Attendance</h2>
+<p class="paragraph">Manage Attendance here:</p>
+<p ><a href="attendance.html"><button class="button">GO</button></a></p>
+</div> 
+</div> 
+</div> 
+<div class="row"> 
+<div class="column"> 
+<div class="card"> 
+<div class="container"> 
+<h2 class="heading">Mark Sheet</h2> 
+<p class="paragraph">Manage marks here </p> 
+<p><a href="marks.html"><button class="button">GO</button></a></p> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="row"> 
+<div class="column"> 
+<div class="card"> 
+<div class="container"> 
+<h2 class="heading">Registered student log:</h2> 
+<p class="paragraph">Manage registered students</p> 
+<p> <form method="POST" action="regtab.php"> 
+<button formaction="regtab.php" class="button">Go</button> 
+</form> </p> 
+</div> 
+</div> 
+</div> 
+</div> 
+</body> 
+</html>

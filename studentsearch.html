@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta name="viewport" 
+content="width=devicewidth, initial-scale=1"> 
+<style> * 
+{ 
+box-sizing: border-box; 
+} body{background-image: 
+url('https://img.freepik.com/freevector/blue-copy-space-digital-background_23-2148821698.jpg?w=900&t=st=1682074666~exp=1682075266~hmac=1be0ae55d4fc18c53ecad2c2fc495519d9e6d038db2b659897abe65001f91da6'); 
+} #myInput 
+{ 
+background-image: url('/css/searchicon.png'); 
+background-position: 10px 10px; background-repeat: no-repeat; width: 100%; font-size: 
+16px; padding: 12px 20px 12px 40px; border: 
+1px solid #ddd; margin-bottom: 12px; 
+} #myTable 
+{ 
+border-collapse: collapse; 
+width: 100%; border: 1px 
+solid #ddd; font-size: 
+18px; 
+}
+#myTable th, #myTable td { 
+text-align: left; padding: 
+12px; 
+} 
+#myTable tr { 
+border-bottom: 1px solid #ddd; 
+} 
+#myTable tr.header, #myTable tr:hover { 
+background-color:black; 
+} p{ 
+font-size:28px; 
+} 
+</style> 
+</head> 
+<body class="back"> 
+ <p style="color:white"> 
+ Student Details Search 
+ </p> 
+ <input type="text" id="myInput" 
+onkeyup="myFunction()" placeholder="Search 
+for names.." title="Type in a name"> 
+<table id="myTable" style="color:white"> 
+ <tr class="header"> 
+<th style="color:white" 
+style="width:20%;">Rollno</th> 
+<th style="color:white" 
+style="width:20%;">Name</th> 
+<th style="color:white" 
+style="width:20%;">CGPA</th> 
+<th style="color:white" 
+style="width:20%;">Branch</th> 
+ <th style="color:white" 
+style="width:20%;">Year</th> 
+ </tr> 
+ <tr> 
+ <td>318514102025</td> 
+ <td>K.Vidya</td> 
+ <td>9.2</td> 
+ <td>CSE</td> 
+ <td>2nd year</td> 
+ </tr> 
+ <tr> 
+ <td>318514102003</td> 
+ <td>CH.Pragna</td> 
+ <td>9.5</td> 
+ <td>ECE</td> 
+ <td>3rd year</td> 
+ </tr> 
+ <tr> 
+ <td>318514102018</td> 
+ <td>V.Swetha</td> 
+ <td>9.8</td> 
+ <td>CSE</td> 
+ <td>1st year</td> 
+ </tr> 
+ <tr> 
+ <td>318514102004</td> 
+ <td>K.Sri Vani</td> 
+ <td>9.0</td> 
+ <td>EEE</td> 
+ <td>3rd year</td> 
+ </tr> 
+ <tr> 
+ <td>318510102001</td> 
+<td>A.Aaradhya</td> 
+ <td>10</td> 
+ <td>CSE</td> 
+ <td>1st year</td> 
+ </tr> 
+ <tr> 
+ <td>318514102016</td> 
+ <td>N.Navya</td> 
+ <td>8.9</td> 
+ <td>MECH</td> 
+ <td>2nd year</td> 
+ </tr> 
+ <tr> 
+ <td>318514102017</td> 
+ <td>Seulgi</td> 
+ <td>9.2</td> 
+ <td>MECH</td> 
+ <td>4th year</td> 
+ </tr> 
+ <tr> 
+ <td>318514102009</td> 
+ <td>Irene</td> 
+ <td>10</td> 
+ <td>CSE</td> 
+ <td>4th year</td> 
+ </tr> 
+ </table> 
+<script> 
+ function myFunction() { 
+var input, filter, table, tr, td, i, 
+txtValue; input = 
+document.getElementById("myInput"); 
+ filter = 
+input.value.toUpperCase(); 
+table = 
+document.getElementById("myTable"); 
+tr = 
+table.getElementsByTagName("tr"); 
+for (i = 0; i < tr.length; i++) { 
+td = 
+tr[i].getElementsByTagName("td")[0]; 
+if (td) { 
+ txtValue = td.textContent 
+|| td.innerText; 
+if 
+(txtValue.toUpperCase().indexOf(filter) > -1) 
+{ 
+ tr[i].style.display = 
+""; 
+ } 
+else { 
+ tr[i].style.display = 
+"none"; 
+ } 
+ } 
+ } 
+} 
+ </script> 
+</body> 
+</html>
